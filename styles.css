@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #ffa500;
+    color: black;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px !important;
+    transition: 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#logo span {
+    color: #ffa500;
+}
+
+.navbar-toggler span {
+    color: #ffa500;
+}
+
+.nav-item .nav-link {
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    border-radius: 0.25rem;
+    transition: 0.4s ease;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #ffa500;
+    color: white;
+}
+
+#navbar form button {
+    background: #ffa500;
+}
+
+/* -------- */
+
+.home {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/background\ img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home .content {
+    padding-top: 13rem;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    font-size: 4.5rem;
+}
+
+.animatedContent::after {
+    content: ' ';
+    color: #ffa500;
+    animation: aniMate 40s infinite linear;
+}
+
+@keyframes aniMate {
+    0% {
+        content: "Badakhshan";
+    }
+
+    3.33% {
+        content: "Badghis";
+    }
+
+    6.66% {
+        content: "Baghlan";
+    }
+
+    10% {
+        content: "Balkh";
+    }
+
+    13.33% {
+        content: "Bamiyan";
+    }
+
+    16.66% {
+        content: "Daykundi";
+    }
+
+    20% {
+        content: "Farah";
+    }
+
+    23.33% {
+        content: "Faryab";
+    }
+
+    26.66% {
+        content: "Ghazni";
+    }
+
+    30% {
+        content: "Ghor";
+    }
+
+    33.33% {
+        content: "Helmand";
+    }
+
+    36.66% {
+        content: "Herat";
+    }
+
+    40% {
+        content: "Jawzjan";
+    }
+
+    43.33% {
+        content: "Kabul";
+    }
+
+    46.66% {
+        content: "Kandahar";
+    }
+
+    50% {
+        content: "Kapisa";
+    }
+
+    53.33% {
+        content: "Khost";
+    }
+
+    56.66% {
+        content: "Kunar";
+    }
+
+    60% {
+        content: "Kunduz";
+    }
+
+    63.33% {
+        content: "Laghman";
+    }
+
+    66.66% {
+        content: "Logar";
+    }
+
+    70% {
+        content: "Nangarhar";
+    }
+
+    73.33% {
+        content: "Nimroz";
+    }
+
+    76.66% {
+        content: "Nuristan";
+    }
+
+    80% {
+        content: "Paktia";
+    }
+
+    83.33% {
+        content: "Paktika";
+    }
+
+    86.66% {
+        content: "Panjshir";
+    }
+
+    90% {
+        content: "Parwan";
+    }
+
+    93.33% {
+        content: "Samangan";
+    }
+
+    96.66% {
+        content: "Sar-e Pol";
+    }
+
+    100% {
+        content: "Takhar";
+    }
+}
+
+.home .content .btn {
+    letter-spacing: 0.8px;
+}
+
+.home .content .btn:hover {
+    background-color: #ffa500 !important;
+    text-shadow: none;
+    transition: 0.5s ease;
+}
+
+/* ------------- */
+
+#book {
+    background: rgba(114, 113, 113, 0.1);
+}
+
+.book_content {
+    text-shadow: 0px 1px 1px black;
+}
+
+.book_content span {
+    color: #ffa500;
+}
+
+textarea {
+    resize: none;
+    height: 10rem !important;
+}
+
+#book form input,
+textarea,
+select {
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3) !important;
+    height: 2.8rem;
+    border-radius: 0.6rem;
+    letter-spacing: 0.8px;
+}
+
+#book form .btn {
+    background-color: #ffa500;
+    white-space: nowrap;
+    width: max-content !important;
+}
+
+#book form .btn:hover {
+    transform: scaleX(1.05);
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+
+#book .book_img {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+        white-space: wrap;
+    }
+}
+
+@media(max-width:450px) {
+    .home .content h5{
+        font-size: 1.5rem;
+    }
+
+    .home .content h1{
+        font-size: 2.4rem;
+    }
+}
