@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>new project</title>
+</head>
+
+<body>
+    <!-- ----Navegation-Bar---- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0 end-0 start-0 " id="navbar">
+        <div class="container-lg container-fluid">
+            <a class="navbar-brand p-0 m-0 " href="index.html" id="logo"><span>T</span>ravel</a>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span><i class="ri-more-2-fill h2 fw-bolder"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex column-gap-sm-2" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0 text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ----Home---- -->
+    <div class="home w-100">
+        <div class="content text-center">
+            <h5 class="fs-1 fw-semibold">Welcome To Our World</h5>
+            <h1 class="fw-semibold">Visit <span class="animatedContent"></span></h1>
+            <p class="fs-6 fw-semibold mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum!
+            </p>
+            <a class="btn bg-white" href="#book">Book Place</a>
+            <a class="btn bg-white px-4" href="#book">EXplore</a>
+        </div>
+    </div>
+    <!-- ----Book---- -->
+    <div class="py-4 pb-5" id="book">
+        <div class="container-md container-fluid">
+            <div class="book_content text-center py-4">
+                <h2 class="fs-1"><span>B</span>ook</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 px-2 px-md-0">
+                    <div class="w-100 book_img px-2 border rounded-3  justify-content-center d-flex">
+                        <img class="w-100" src="images/book-img.png" alt="book">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <form action="/" class="d-flex flex-column px-2">
+                        <input type="email" class="form-control mb-4" placeholder="Your Email" required>
+                        <input class="form-control mb-4" type="text" placeholder="the place" required>
+                        <select class="form-select form-control rounded-3 mb-4" required>
+                            <option disabled selected>Select a Date</option>
+                            <option>3 Days</option>
+                            <option>7 Days</option>
+                            <option>10 Days</option>
+                            <option>2 Weeks</option>
+                            <option>3 Weeks</option>
+                            <option>1 Month</option>
+                            <option>2 Weeks</option>
+                        </select>
+                        <input type="date" class="form-control mb-4" required>
+                        <textarea class="form-control rounded-3 mb-2" placeholder="Write Your Info..."></textarea>
+                        <button class="btn fw-semibold text-white shadow mt-1 py-2 rounded-3 px-4">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
