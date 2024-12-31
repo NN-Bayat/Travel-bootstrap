@@ -13,15 +13,16 @@
 
 <body>
     <!-- ----Navegation-Bar---- -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3" id="navbar">
         <div class="container-lg container-fluid">
             <a class="navbar-brand p-0 m-0 " href="index.html" id="logo"><span>T</span>ravel</a>
-            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span><i class="ri-more-2-fill h2 fw-bolder"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0 ">
+                <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -29,7 +30,7 @@
                         <a class="nav-link" href="#book">Book</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#package">Packages</a>
+                        <a class="nav-link" href="#package">Packages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -353,11 +354,27 @@
             <p>Designed By <span>('NN-Bayat')</span></p>
         </div>
     </footer>
-
-
-
-
+    <!-- -----------------JAVASCRIPT------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navLinks = document.querySelectorAll(".nav-link");
+        const collapsibleMenu = document.getElementById("navbarSupportedContent");
+        const toggleButton = document.querySelector(".navbar-toggler i");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                if (collapsibleMenu.classList.contains("show")) {
+                    collapsibleMenu.classList.remove("show");
+                    toggleButton.setAttribute("class", "ri-more-2-fill");
+                }
+            });
+        });
+
+        document.querySelector(".navbar-toggler").addEventListener("click", () => {
+            const isOpen = collapsibleMenu.classList.contains("show");
+            toggleButton.setAttribute("class", isOpen ? "ri-more-2-fill" : "ri-close-line");
+        });
+    </script>
 </body>
 
 </html>
