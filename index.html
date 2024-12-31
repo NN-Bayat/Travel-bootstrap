@@ -12,7 +12,7 @@
 
 <body>
     <!-- ----Navegation-Bar---- -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0 end-0 start-0 " id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
         <div class="container-lg container-fluid">
             <a class="navbar-brand p-0 m-0 " href="index.html" id="logo"><span>T</span>ravel</a>
             <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#book">Book</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#">Packages</a>
+                        <a class="nav-link " href="#package">Packages</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
@@ -61,16 +61,16 @@
     <!-- ----Book---- -->
     <div class="py-4 pb-5" id="book">
         <div class="container-md container-fluid">
-            <div class="book_content text-center py-4">
+            <div class="section_title text-center py-4">
                 <h2 class="fs-1"><span>B</span>ook</h2>
             </div>
             <div class="row">
-                <div class="col-md-6 px-2 px-md-0">
+                <div class="col-md-6 px-2 px-md-0 py-3 py-md-0">
                     <div class="w-100 book_img px-2 border rounded-3  justify-content-center d-flex">
                         <img class="w-100" src="images/book-img.png" alt="book">
                     </div>
                 </div>
-                <div class="col-md-6 mt-4 mt-md-0">
+                <div class="col-md-6 mt-4 mt-md-0 py-3 py-md-0">
                     <form action="/" class="d-flex flex-column px-2">
                         <input type="email" class="form-control mb-4" placeholder="Your Email" required>
                         <input class="form-control mb-4" type="text" placeholder="the place" required>
@@ -82,7 +82,7 @@
                             <option>2 Weeks</option>
                             <option>3 Weeks</option>
                             <option>1 Month</option>
-                            <option>2 Weeks</option>
+                            <option>2 month</option>
                         </select>
                         <input type="date" class="form-control mb-4" required>
                         <textarea class="form-control rounded-3 mb-2" placeholder="Write Your Info..."></textarea>
@@ -92,8 +92,136 @@
             </div>
         </div>
     </div>
-
-
+    <!-- ----Package---- -->
+    <section id="package">
+        <div class="container-md pb-5">
+            <div class="section_title text-center py-4">
+                <h2 class="fs-1"><span>P</span>ackages</h2>
+            </div>
+            <div class="row row-gap-md-4 row-gap-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/france.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Kabul</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class="text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$500</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/pakistan.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Herat</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class=" text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$250</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/italy.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Band Amir</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class=" text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$700</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/uk.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Panjshir</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class=" text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$800</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/india.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Kandahar</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class=" text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                                <i class="ri-star-line"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$Free</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-lg overflow-hidden rounded-2">
+                        <div class="w-100">
+                            <img class="w-100 rounded-3" src="images/us.png" alt=" Card-image">
+                        </div>
+                        <div class="px-3 pt-4 pb-2">
+                            <h2>Ghazni</h2>
+                            <p>Lorem ipsum dolor sit ametur, adipis veniam remodit atque eius obcaecati.</p>
+                            <span class=" text-warning fs-5">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-line"></i>
+                            </span>
+                            <p class="mb-1 fs-5 fw-semibold">Price: <span class="text-warning">$400</span></p>
+                            <button class="btn text-light fw-semibold">Visit Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
