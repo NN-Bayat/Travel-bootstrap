@@ -5,15 +5,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none !important;
+    list-style: none !important;
     scroll-behavior: smooth;
 }
+
+/* ------ */
 
 ::selection {
     background-color: #ffa500;
     color: black;
 }
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffa500;
+    border-radius: 12em;
+}
+
+/* ----- */
 
 #logo {
     font-size: 36px;
@@ -217,7 +231,7 @@
 /* ------------- */
 
 #book {
-    background: rgba(114, 113, 113, 0.1);
+    background: rgba(201, 198, 198, 0.1);
 }
 
 .section_title {
@@ -244,43 +258,116 @@ select {
     letter-spacing: 0.8px;
 }
 
-#book form .btn {
+#book form .btn,
+#about .row .btn {
     background-color: #ffa500;
     white-space: nowrap;
-    width: max-content !important;
+    width: 21%;
+    transition: width 0.5s ease;
+    letter-spacing: 0.8px;
 }
 
-#book form .btn:hover {
-    transform: scaleX(1.05);
-    transition: transform 0.3s;
-    transform-origin: left;
+#book form .btn:hover,
+#about .row .btn:hover {
+    width: 180px !important;
 }
+
 
 #book .book_img {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-#package .btn{
+#package .btn {
     background: #ffa500;
 }
+
+#services {
+    background: rgba(201, 198, 198, 0.1);
+}
+
+#services span i {
+    color: #ffa500;
+}
+
+#gallary .row img {
+    height: 15rem !important;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#gallary .row img:hover {
+    transform: scale(1.09, 1.05);
+}
+
+#about {
+    padding-block: 3rem 2rem;
+    background: rgba(201, 198, 198, 0.1);
+}
+
+footer {
+    margin-top: 10rem;
+    background: rgba(201, 198, 198, 0.1);
+}
+
+footer .footer_socails a {
+    cursor: pointer;
+    background-color: #ffa500;
+    transition: all 0.5s ease;
+}
+
+footer .footer_socails a:hover {
+    background-color: black;
+    border-radius: 100% !important;
+    color: #ffa500 !important;
+    transform: translateY(-20px) !important;
+    transform-origin: top;
+}
+
 /* -------------------- */
+
 @media(max-width:850px) {
     .home {
         background-position: 50%;
     }
 
-    .home .content h1{
+    .home .content h1 {
         font-size: 4rem;
         white-space: wrap;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+
+    footer br{
+        display: none;
     }
 }
 
 @media(max-width:450px) {
-    .home .content h5{
+    .home .content h5 {
         font-size: 1.5rem;
     }
 
-    .home .content h1{
+    .home .content h1 {
         font-size: 2.4rem;
+    }
+
+    #book form .btn,
+    #about .row .btn {
+        background-color: #ffa500;
+        white-space: nowrap;
+        width: 150px !important;
+        transition: width 0.5s ease;
+        letter-spacing: 0.8px;
+    }
+
+    #book form .btn:hover,
+    #about .row .btn:hover {
+        width: 200px !important;
+    }
+
+    footer {
+        margin-top: 1rem;
     }
 }
