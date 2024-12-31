@@ -63,6 +63,16 @@
     color: white;
 }
 
+.navbar-toggler i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-toggler i:hover {
+    transform: scale(1.2);
+}
+
 #navbar form button {
     background: #ffa500;
 }
@@ -339,7 +349,7 @@ footer .footer_socails a:hover {
         margin-top: 5rem;
     }
 
-    footer br{
+    footer br {
         display: none;
     }
 }
